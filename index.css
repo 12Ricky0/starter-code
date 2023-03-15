@@ -41,7 +41,7 @@ body {
   text-align: left;
   color: #d0d6f9;
   background-size: cover;
-  padding-bottom: 100vh;
+  /* padding-bottom: 100vh; */
 }
 
 .hidden {
@@ -131,7 +131,6 @@ nav {
   top: 315px;
   left: 100px;
   right: 0;
-  margin-right: 0;
   bottom: 0;
   color: #d0d6f9;
 }
