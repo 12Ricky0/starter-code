@@ -1,0 +1,1020 @@
+/* box sizing */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+picture,
+figure {
+  margin: 0;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-image: url(assets/home/background-home-desktop.jpg);
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #d0d6f9;
+  background-size: cover;
+  padding-bottom: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+}
+
+.burger {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 55px;
+  top: 50px;
+  margin-right: 50px;
+}
+
+.close {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.77px);
+  margin-right: 0;
+  padding-right: 0;
+  position: absolute;
+  top: 28px;
+  padding: 35px 50px;
+  align-items: center;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+}
+
+.nav-links::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 350px;
+  right: 650px;
+  order: -1;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-right: 50px;
+  letter-spacing: 2.7px;
+  color: white;
+}
+
+.nav-links a:hover {
+  border-bottom: 5px solid;
+  padding-bottom: 30px;
+  opacity: 0.5;
+}
+
+.active {
+  border-bottom: 5px solid;
+  padding-bottom: 32px;
+  opacity: 1;
+}
+
+/* text settings */
+
+.group-1 {
+  position: absolute;
+  top: 315px;
+  left: 100px;
+  right: 0;
+  margin-right: 0;
+  bottom: 0;
+  color: #d0d6f9;
+}
+
+.span-1 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  padding-bottom: 100px;
+}
+
+.span-2 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 172px;
+  color: #ffffff;
+}
+
+/* Explore button */
+.span-3 {
+  display: grid;
+  background-color: #ffffff;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  place-items: center;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+  color: #0b0d17;
+  text-decoration: none;
+  margin-left: 170px;
+  margin-top: 90px;
+}
+
+.span-3::after {
+  content: "";
+  position: absolute;
+  background-color: #0b0d17;
+  width: 250px;
+  height: 250px;
+  z-index: -1;
+  border-radius: 50%;
+  animation: ease-out;
+  text-decoration: none;
+}
+
+.span-3:hover::after {
+  transform: scale(1.5);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* destination pages styles (remember to use the span 4 class) */
+
+.destination {
+  background-image: url(assets/destination/background-destination-desktop.jpg);
+}
+
+.destination-container {
+  position: absolute;
+  top: 290px;
+  left: 100px;
+  color: #d0d6f9;
+  padding-right: 170px;
+  margin: auto;
+}
+
+.pick {
+  position: absolute;
+  left: 14.14%;
+  right: 1.57%;
+  top: 150px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.pick01 {
+  opacity: 0.5;
+}
+
+.planet {
+  width: 350px;
+  /* position: fixed;;
+  display: inline-block;;  */
+  left: 150px;
+}
+
+.sub-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.sub-links a {
+  margin-inline: 20px;
+  text-decoration: none;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+
+.sub-links a:hover {
+  border-bottom: 3px solid;
+  padding-bottom: 10px;
+  opacity: 0.5;
+  color: #ffffff;
+}
+
+/* .active-link {
+  border-bottom: 5px solid;
+  padding-bottom: 10px;
+  opacity: 1;
+} */
+
+.group-2 {
+  position: absolute;
+  display: inline-block;
+  left: 00px;
+  top: 0px;
+}
+
+.span-4 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  color: #ffffff;
+}
+
+hr {
+  margin-top: 50px;
+}
+
+.below {
+  margin-right: 100px;
+}
+
+.little-text {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.numbers {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* CREWS DESIGN */
+
+.crew {
+  background-image: url(assets/crew/background-crew-desktop.jpg);
+}
+
+.crew-container {
+  position: absolute;
+  left: 150px;
+  top: 200px;
+  margin: auto;
+  bottom: 0;
+}
+
+.commander {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  margin-top: 120px;
+}
+
+.span-A {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 70px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.span-B {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.text {
+  width: 80%;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  margin: 30px 0 50px;
+}
+
+.crew-img {
+  width: 450px;
+  height: 550px;
+}
+
+.button-div {
+  margin: auto;
+  display: flex;
+}
+
+button {
+  height: 15px;
+  width: 15px;
+  border: none;
+  border-radius: 50%;
+  margin-inline: 10px;
+  opacity: 0.17;
+}
+
+button:hover {
+  opacity: 1;
+}
+.rule {
+  display: none;
+}
+
+/* TECHNOLOGY PAGE DESIGN */
+
+.technology {
+  background-image: url(assets/technology/background-technology-desktop.jpg);
+}
+
+.span-c {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.technology-container {
+  position: absolute;
+  top: 250px;
+  margin: auto;
+}
+
+.tech-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: grid;
+  align-content: center;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border: 1px solid;
+  background-color: #0b0d17;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.tech-button:hover {
+  background-color: #ffffff;
+  color: #0b0d17;
+}
+
+.technology-capsule {
+  display: inline-block;
+  position: relative;
+  right: 0;
+  top: 100px;
+  margin-bottom: 50px;
+  /* width: 50%; */
+}
+
+.tech-btn {
+  float: left;
+  margin: 0 50px;
+}
+
+.capsule-img {
+  float: right;
+}
+
+/* tablet design */
+
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  body {
+    background-image: url(assets/home/background-home-tablet.jpg);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .destination {
+    background-image: url(assets/destination/background-destination-tablet.jpg);
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+    left: 39px;
+    top: 24px;
+  }
+
+  .nav-links {
+    top: 0;
+    padding-right: 20px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    color: white;
+  }
+
+  .nav-links::after {
+    display: none;
+  }
+
+  b {
+    display: none;
+  }
+
+  .group-1 {
+    position: absolute;
+    top: 250px;
+    /* left: 10px; */
+    width: 60%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    margin-left: 70px;
+  }
+
+  .span-2 {
+    font-size: 150px;
+    line-height: 250px;
+  }
+
+  .span-3 {
+    width: 222px;
+    height: 222px;
+  }
+
+  .explore {
+    align-self: center;
+    position: absolute;
+    top: 450px;
+    right: 50px;
+  }
+
+  .span-3::after {
+    width: 222px;
+    height: 222px;
+  }
+
+  /* Destination Moon */
+  .pick {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    left: 10px;
+  }
+
+  .destination-container {
+    align-items: center;
+    top: 200px;
+    margin: auto;
+    padding-right: 100px;
+  }
+
+  .planet {
+    width: 300px;
+    left: 150px;
+    margin: 50px 0 50px 0;
+  }
+
+  .group-2 {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  ul {
+    margin-left: 100px;
+    line-height: 50px;
+  }
+
+  .sub-links a {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: center;
+  }
+
+  .span-4 {
+    font-size: 80px;
+    line-height: 92px;
+  }
+
+  .little-text {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+
+  .numbers {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .footer {
+    padding-left: 100px;
+    padding-bottom: 50px;
+  }
+
+  /* CREW DESIGN */
+  .crew {
+    background-image: url(assets/crew/background-crew-tablet.jpg);
+  }
+
+  .crew-container {
+    left: 0;
+    top: 130px;
+    margin: auto;
+    bottom: 0;
+  }
+
+  .commander {
+    margin-top: 50px;
+  }
+
+  .span-A {
+    font-size: 24px;
+    line-height: 70px;
+  }
+
+  .span-B {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 160px;
+    display: block;
+    margin: auto;
+  }
+
+  .button-div {
+    order: 1;
+    display: inline-block;
+    margin: 30px auto 150px;
+  }
+
+  .crew-img {
+    width: 456.37px;
+    height: 572px;
+    display: block;
+    margin: auto;
+  }
+
+  .image {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* TECHNOLOGY DESIGN */
+
+  .technology {
+    background-image: url(assets/technology/background-technology-tablet.jpg);
+  }
+  .span-c {
+    font-size: 40px;
+    line-height: 100px;
+  }
+
+  .capsule-img {
+    float: none;
+  }
+
+  .technology-container {
+    display: flex;
+    flex-direction: column-reverse;
+    top: 250px;
+  }
+
+  .technology-capsule {
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+
+  .tech-button {
+    width: 58px;
+    height: 58px;
+    display: inline-block;
+    margin: 50px 11px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+
+  .tech-btn {
+    float: none;
+    margin: 0;
+  }
+  .capsule {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 771px) and (max-width: 900px) {
+}
+/* Mobile design */
+
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url(assets/home/background-home-mobile.jpg);
+    padding-bottom: 100vh;
+    text-align: center;
+  }
+
+  nav {
+    margin-right: 20px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    inset: 0 0 0 40%;
+    height: 100%;
+    list-style: none;
+    flex-direction: column;
+    margin: 0px;
+    padding-top: 150px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    display: none;
+  }
+
+  .nav-links li {
+    margin: 0px;
+    padding: 20px 0px;
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: center;
+  }
+
+  .nav-links a {
+    margin: 0;
+  }
+
+  .nav-links a:hover {
+    padding-bottom: 20px;
+  }
+
+  .close {
+    position: fixed;
+    display: block;
+    z-index: 2;
+    right: 20px;
+    top: 33.95px;
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    margin: 33px 0 0px 0;
+  }
+
+  .close:hover {
+    cursor: pointer;
+  }
+
+  .burger:hover {
+    cursor: pointer;
+  }
+
+  .logo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 24px;
+    top: 24px;
+    margin-right: 50px;
+  }
+
+  .group-1 {
+    font-size: 15px;
+    line-height: 25px;
+    left: 0px;
+    top: 200px;
+  }
+
+  .span-1 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .span-2 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .span-3 {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+    position: absolute;
+    right: 5.625rem;
+    top: 350px;
+  }
+
+  .span-3::after {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Destination Moon */
+  .destination {
+    background-image: url(assets/destination/background-destination-mobile.jpg);
+  }
+
+  .pick {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    top: 90px;
+  }
+
+  .destination-container {
+    margin: auto;
+    top: 150px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-right: 0;
+  }
+
+  .planet {
+    width: 170px;
+    /* left: 150px; */
+    margin-bottom: 30px;
+  }
+
+  .group-2 {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .sub-links a {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+
+  .span-4 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .little-text {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 2.3625px;
+  }
+
+  .numbers {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .below {
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    padding-bottom: 50px;
+  }
+
+  /* CREW DESIGN */
+
+  .crew {
+    background-image: url(assets/crew/background-crew-mobile.jpg);
+    padding-bottom: 70%;
+  }
+
+  .crew-container {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 20px auto;
+  }
+
+  .crew-img {
+    width: 327px;
+    height: 223px;
+    display: block;
+    margin: auto;
+  }
+
+  .span-A {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .span-B {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .text {
+    font-size: 15px;
+    margin: 25px auto 0;
+    width: 95%;
+  }
+
+  .commander {
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+  }
+
+  .button-div {
+    order: 1;
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  .error {
+    order: 2;
+  }
+
+  .rule {
+    position: relative;
+    margin: 0;
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+
+  /* TECHNOLOGY DESIGN */
+
+  .technology {
+    background-image: url(assets/technology/background-technology-mobile.jpg);
+  }
+  .span-c {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .technology-container {
+    display: flex;
+    flex-direction: column-reverse;
+    top: 150px;
+  }
+
+  .technology-capsule {
+    top: 0;
+    bottom: 0;
+  }
+
+  .tech-button {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 50px 11px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+
+  .tech-btn {
+    float: none;
+    margin: 0;
+  }
+  .capsule {
+    padding: 0;
+  }
+}
+
+/* MOBILE BELOW 375 */
+/* homepage design */
+@media screen and (max-width: 375px) {
+  .span-3 {
+    top: 250px;
+  }
+
+  /* Crew design */
+  /* .text {
+    position: absolute;
+    top: 400px;
+    margin-bottom: 0px;
+  }
+
+  .image {
+    position: relative;
+    bottom: 100px;
+    margin-left: 20px;
+  }
+
+  .button-div {
+    display: block;
+    margin: auto;
+  }
+  .span-A {
+    position: relative;
+    bottom: 150px;
+  }
+
+  .span-B {
+    position: relative;
+  }*/
+}
