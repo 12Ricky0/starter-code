@@ -1,13 +1,14 @@
 $(".burger").click(function () {
     $(".nav-links").css("display", "block");
     $(".close").css("display", "block");
+    $(".burger").css("display", "none");
 
 })
 
 $(".close").click(function () {
     $(".nav-links").css("display", "none");
     $(".close").css("display", "none");
-
+    $(".burger").css("display", "block");
 })
 
 // CREW Functions
@@ -46,13 +47,16 @@ $(".tech a").attr("href", "technology.html");
 
 $(".nav-links .home").click(function () {
     $(".nav-links .home").addClass("active");
-    // var inactive = $(".nav-links a");
-    // inactive.toggleClass("active");
-    // if (inactive == inactive + ":active") {
-
-    // }
-    // else { inactive.removeClass("active"); }
 })
+
+$(".capsule-btn").click(function () {
+    $(".space-capsule").css("display", "block");
+    $(".vehicle").css("display", "none");
+
+    $(".spaceport").css("display", "none");
+
+});
+
 
 $(".spaceport-btn").click(function () {
     $(".space-capsule").css("display", "none");
@@ -70,42 +74,3 @@ $(".vehicle-btn").click(function () {
 });
 
 
-// $("button.specialist").click(function () {
-//     $(".hidden1").css("display", "none");
-//     $(".hidden").css("display", "block");
-//     $(".hidden2").css("display", "none");
-//     $(".hidden3").css("display", "none");
-
-// });
-
-// $("button.douglas").click(function () {
-//     $(".hidden1").css("display", "block");
-//     $(".hidden").css("display", "none");
-//     $(".hidden2").css("display", "none");
-//     $(".hidden3").css("display", "none");
-
-// });
-
-// $("button.pilot").click(function () {
-//     $(".hidden2").css("display", "block");
-//     $(".hidden").css("display", "none");
-//     $(".hidden1").css("display", "none");
-//     $(".hidden3").css("display", "none");
-
-// });
-
-// $("button.engineer").click(function () {
-//     $(".hidden3").css("display", "block");
-//     $(".hidden2").css("display", "none");
-//     $(".hidden").css("display", "none");
-//     $(".hidden1").css("display", "none");
-// });
-
-
-// $(document).keydown(function (event) {
-//     console.log(event.key)
-// })
-
-// $(".sub-links a").click(function () {
-//     $(".sub-links a").this.toggleClass("active-link");
-// });
