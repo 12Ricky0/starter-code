@@ -41,6 +41,8 @@ body {
   text-align: left;
   color: #d0d6f9;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
   /* padding-bottom: 100vh; */
 }
 
@@ -701,7 +703,6 @@ button:hover {
 @media screen and (max-width: 500px) {
   body {
     background-image: url(assets/home/background-home-mobile.jpg);
-    padding-bottom: 100vh;
     text-align: center;
     background-attachment: fixed;
   }
@@ -835,7 +836,6 @@ button:hover {
 
   .planet {
     width: 170px;
-    /* left: 150px; */
     margin-bottom: 30px;
   }
 
@@ -937,7 +937,7 @@ button:hover {
   button {
     width: 10px;
     height: 10px;
-    border-radius: 100%;
+    border-radius: 5px;
   }
 
   .error {
