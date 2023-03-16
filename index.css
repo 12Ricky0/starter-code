@@ -931,6 +931,11 @@ button:hover {
     margin: 0 auto 30px;
   }
 
+  .button-round {
+    width: 10px;
+    height: 10px;
+  }
+
   .error {
     order: 2;
   }
