@@ -935,9 +935,9 @@ button:hover {
   }
 
   button {
-    width: 10px;
+    width: 5px;
     height: 10px;
-    border-radius: 5px;
+    border-radius: 50%;
   }
 
   .error {
