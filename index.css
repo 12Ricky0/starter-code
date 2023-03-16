@@ -703,6 +703,7 @@ button:hover {
     background-image: url(assets/home/background-home-mobile.jpg);
     padding-bottom: 100vh;
     text-align: center;
+    background-attachment: fixed;
   }
 
   nav {
@@ -778,8 +779,10 @@ button:hover {
   .group-1 {
     font-size: 15px;
     line-height: 25px;
-    left: 0px;
     top: 200px;
+    display: block;
+    margin: auto;
+    left: 0;
   }
 
   .span-1 {
@@ -931,9 +934,10 @@ button:hover {
     margin: 0 auto 30px;
   }
 
-  .button-round {
+  button {
     width: 10px;
     height: 10px;
+    border-radius: 100%;
   }
 
   .error {
@@ -995,30 +999,4 @@ button:hover {
   .span-3 {
     top: 250px;
   }
-
-  /* Crew design */
-  /* .text {
-    position: absolute;
-    top: 400px;
-    margin-bottom: 0px;
-  }
-
-  .image {
-    position: relative;
-    bottom: 100px;
-    margin-left: 20px;
-  }
-
-  .button-div {
-    display: block;
-    margin: auto;
-  }
-  .span-A {
-    position: relative;
-    bottom: 150px;
-  }
-
-  .span-B {
-    position: relative;
-  }*/
 }
