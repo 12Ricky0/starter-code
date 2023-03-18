@@ -43,7 +43,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom center;
-  /* padding-bottom: 100vh; */
 }
 
 .hidden {
@@ -78,6 +77,7 @@ nav {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.77px);
+  opacity: 1;
   margin-right: 0;
   padding-right: 0;
   position: absolute;
@@ -475,6 +475,7 @@ button:hover {
 
   .destination {
     background-image: url(assets/destination/background-destination-tablet.jpg);
+    background-attachment: fixed;
   }
 
   .logo {
@@ -507,7 +508,6 @@ button:hover {
   .group-1 {
     position: absolute;
     top: 250px;
-    /* left: 10px; */
     width: 60%;
     font-weight: 400;
     font-size: 16px;
@@ -529,7 +529,7 @@ button:hover {
   .explore {
     align-self: center;
     position: absolute;
-    top: 450px;
+    top: 400px;
     right: 50px;
   }
 
@@ -601,6 +601,7 @@ button:hover {
   /* CREW DESIGN */
   .crew {
     background-image: url(assets/crew/background-crew-tablet.jpg);
+    background-attachment: fixed;
   }
 
   .crew-container {
@@ -657,6 +658,7 @@ button:hover {
 
   .technology {
     background-image: url(assets/technology/background-technology-tablet.jpg);
+    background-attachment: fixed;
   }
   .span-c {
     font-size: 40px;
@@ -724,7 +726,8 @@ button:hover {
     margin: 0px;
     padding-top: 150px;
     background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(48px);
+    opacity: 1;
     display: none;
   }
 
@@ -936,9 +939,9 @@ button:hover {
   }
 
   button {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 40%;
   }
 
   .error {

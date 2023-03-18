@@ -43,11 +43,10 @@ $("button.engineer").click(function () {
 });
 
 $(".tech a").attr("href", "technology.html");
-// $(".tech a").attr("href", "technology.html");
 
-$(".nav-links .home").click(function () {
-    $(".nav-links .home").addClass("active");
-})
+// $(".nav-links .home").click(function () {
+//     $(".nav-links .home").addClass("active");
+// })
 
 $(".capsule-btn").click(function () {
     $(".space-capsule").css("display", "block");
