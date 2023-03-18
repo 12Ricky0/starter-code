@@ -198,6 +198,7 @@ nav {
 
 .destination {
   background-image: url(assets/destination/background-destination-desktop.jpg);
+  background-attachment: fixed;
 }
 
 .destination-container {
@@ -314,6 +315,7 @@ hr {
 
 .crew {
   background-image: url(assets/crew/background-crew-desktop.jpg);
+  background-attachment: fixed;
 }
 
 .crew-container {
@@ -396,6 +398,7 @@ button:hover {
 
 .technology {
   background-image: url(assets/technology/background-technology-desktop.jpg);
+  background-attachment: fixed;
 }
 
 .span-c {
@@ -467,6 +470,7 @@ button:hover {
     font-size: 16px;
     line-height: 28px;
     text-align: center;
+    background-attachment: fixed;
   }
 
   .destination {
@@ -696,8 +700,6 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 771px) and (max-width: 900px) {
-}
 /* Mobile design */
 
 @media screen and (max-width: 500px) {
@@ -722,7 +724,7 @@ button:hover {
     margin: 0px;
     padding-top: 150px;
     background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40.7742px);
+    backdrop-filter: blur(100px);
     display: none;
   }
 
@@ -885,7 +887,6 @@ button:hover {
 
   .crew {
     background-image: url(assets/crew/background-crew-mobile.jpg);
-    padding-bottom: 70%;
   }
 
   .crew-container {
@@ -900,8 +901,8 @@ button:hover {
   }
 
   .crew-img {
-    width: 327px;
-    height: 223px;
+    width: 350px;
+    height: 400px;
     display: block;
     margin: auto;
   }
@@ -935,8 +936,8 @@ button:hover {
   }
 
   button {
-    width: 5px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
   }
 
