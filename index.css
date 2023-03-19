@@ -725,7 +725,7 @@ button:hover {
     flex-direction: column;
     margin: 0px;
     padding-top: 150px;
-    background: rgba(255, 255, 255, 0.04);
+    background: #0b0d17;
     backdrop-filter: blur(48px);
     opacity: 1;
     display: none;
@@ -821,6 +821,7 @@ button:hover {
   /* Destination Moon */
   .destination {
     background-image: url(assets/destination/background-destination-mobile.jpg);
+    background-attachment: fixed;
   }
 
   .pick {
@@ -890,6 +891,7 @@ button:hover {
 
   .crew {
     background-image: url(assets/crew/background-crew-mobile.jpg);
+    background-attachment: fixed;
   }
 
   .crew-container {
@@ -961,6 +963,7 @@ button:hover {
 
   .technology {
     background-image: url(assets/technology/background-technology-mobile.jpg);
+    background-attachment: fixed;
   }
   .span-c {
     font-size: 24px;
